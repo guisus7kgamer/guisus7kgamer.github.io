@@ -1,0 +1,391 @@
+html {
+    background: #0D0A12;
+}
+
+html, body{
+    height: 100%;
+    overflow: hidden;
+}
+
+.bg {
+  background-image: url('https://download.omlet.me/images/bg.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+@media (orientation: portrait) {
+  .bg {
+    background-image: url('https://download.omlet.me/images/bg-p.jpg');
+  }
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+  width: 320px;
+  height: unset;
+  margin: unset;
+}
+
+.field-name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #A9AAB8;
+    height: 14px;
+    text-align: left;
+    margin: 16px auto 6px 0px;
+    width: 100%;
+}
+
+select option {
+    background: #2D2F41;
+    border:0px;
+}
+
+.textinputbox {
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  position: relative;
+  background: #3D3F4B;
+  border: 1px solid #5E6070;
+  border-radius: 4px;
+  margin: 8px auto 6px 0px;
+  padding-bottom: unset;
+}
+
+.textinputbox .textinput {
+  line-height: 32px;
+  padding-top: 0px;
+  width: unset;
+}
+
+.textinput {
+  width: unset;
+  font-size: 12px;
+  line-height: 32px;
+  letter-spacing: 1px;
+  left: 8px;
+  right: 0px;
+  position: absolute;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding-top: 0px;
+}
+
+.selectinput {
+  width: unset;
+  height: 32px;
+  font-size: 12px;
+  line-height: 32px;
+  letter-spacing: 1px;
+  left: 8px;
+  right: 8px;
+  position: absolute;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding-top: 0px;
+}
+
+.selectinput:required:invalid {
+  color: #737485;
+}
+
+option[value=""][disabled] {
+  display: none;
+}
+
+option {
+  color: #ffffff;
+}
+
+a.forgotpw, a.forgotpw:visited, a.forgotpw:hover, a.forgotpw:active {
+  font-size: 12px;
+  color: #737485;
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  width: 228px;
+  height: 32px;
+  margin: 0 auto;
+  background-image: url('https://download.omlet.me/images/logo.png');
+  background-position: center;
+  background-size: contain;
+}
+
+.title1{
+  color: #ffffff;
+  width: 100%;
+  font-weight: 700;
+  font-size: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+
+.error {
+  color: #DE1B19;
+  font-size: 12px;
+}
+
+.login-button, .reset-button {
+  width: 100%;
+  height: 32px;
+  margin: 16px auto;
+  background: linear-gradient(270deg, #F65050 0%, #FF6948 100%);
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.signup-button {
+    width: 100%;
+    height: 32px;
+    margin: 32px auto 0px auto;
+    background: linear-gradient(270deg, #F65050 0%, #FF6948 100%);
+    border-radius: 4px;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.login-button a {
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 32px;
+  text-decoration: none;
+}
+
+.confirm-button {
+    min-width: 52px;
+    height: 40px;
+    background: linear-gradient(270deg, #F65050 0%, #FF6948 100%);
+    box-shadow: 0px 0px 15px rgba(255, 105, 72, 0.45);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    color: #FFFFFF;
+    border: 0px;
+    cursor: pointer;
+}
+
+.register a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+.forgotpw {
+  width: 100%;
+  font-size: 14px;
+  color: #A9AAB8;
+  margin-bottom: 32px;
+  margin-top: 16px;
+}
+
+.reset-pw-confirm {
+  position: relative;
+  margin: 35vh auto;
+  width: 80%;
+  max-width: 480px;
+  padding: 30px;
+  background: #161720;
+  border: 1px solid #454759;
+  box-shadow: 0px 15px 20px 2px rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.reset-or-suport-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+.reset-or-suport-desc {
+  margin: 8px 14px 20px 14px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.forgot-pw-desc {
+  font-size: 16px;
+  line-height: 26px;
+  width: 296px;
+  margin: 24px auto 30px auto;
+  color: #ffffff;
+}
+
+.confirm-actions .action-btn {
+  align-self: center;
+  min-width: 90px;
+  width: unset;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: unset;
+  margin-left: 8px;
+  background: linear-gradient(270deg, #F65050 0%, #FF6948 100%);
+  box-shadow: 0px 0px 15px rgba(255, 105, 72, 0.45);
+  border-radius: 4px;
+  height: 16px;
+  line-height: 16px;
+  padding: 10px;
+}
+
+/* do not group these rules */
+*::-webkit-input-placeholder {
+    color: #737485;
+    font-size: 12px;
+    opacity: 0.6;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: #737485;
+    font-size: 12px;
+    opacity: 0.6;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: #737485;
+    font-size: 12px;
+    opacity: 0.6;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #737485;
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+.pw-visible-btn {
+  width: 30px;
+  height: 30px;
+  background-image: url('/img/password-hide.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0px;
+  top: unset;
+  cursor: pointer;
+}
+
+.pw-visible-btn.hide-pw {
+  background-image: url('/img/password-show.svg');
+}
+
+.message{
+  width: 100%;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  height: 20px;
+  margin-top: 24px;
+}
+
+.message2 {
+  width: 100%;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  min-height: 22px;
+}
+
+.des {
+  width: 100%;
+  padding: 0;
+}
+
+.back-to-login {
+  margin-top: 16px;
+}
+
+.back-to-login a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  height: 24px;
+  line-height: 24px;
+}
+
+.dateinput {
+    color: #737485;
+    right: 8px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    display: block;
+    background: url('https://download.omlet.me/images/calendar.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 4px;
+    width: 16px;
+    height: 16px;
+    border-width: thin;
+}
+
+input[type=date]:invalid::-webkit-datetime-edit {
+    color: #737485;
+}
+
+input[type=date]:valid::-webkit-datetime-edit {
+    color: #FFFFFF;
+}
+
+.loader {
+  visibility: hidden;
+  display: inline-block;
+  position: relative;
+  margin-right: -14px;
+  left: -21px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border-top: 2px solid rgba(255,255,255, 0.8);
+  border-right: 2px solid rgba(255,255,255, 1.0);
+  border-bottom: 2px solid rgba(255,255,255, 0.3);
+  border-left: 2px solid rgba(255,255,255, 0.6);
+  box-sizing: border-box;
+  animation: rotation 0.7s linear infinite;
+}
+
+.loader.show {
+  visibility: visible;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

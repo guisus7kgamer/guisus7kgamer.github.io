@@ -1,0 +1,190 @@
+.logo {
+    display: flex;
+    width: 220px;
+    margin: 0 auto;
+    margin-top: 56px;
+  }
+  
+  .om-icon {
+    width: 24px;
+    height: 24px;
+    background-image: url('/img/omlet-icon.svg');
+    margin-right: 8px;
+  }
+  
+  .om-text-brand {
+    width: 188px;
+    height: 24px;
+    background-image: url('/img/omlet-text-brand.svg');
+  }
+  
+  .textinputbox .icon {
+    top: 4px;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .textinputbox .textinput {
+    line-height: 40px;
+    padding-top: 0px;
+    width: 246px;
+  }
+  
+  .textinputbox {
+    width: 296px;
+    margin: 16px auto 6px auto;
+    padding-bottom: 8px;
+  }
+  
+  .des {
+    width: 296px;
+    padding: 0;
+  }
+  
+  .error {
+    color: #F50449;
+    font-size: 12px;
+  }
+  
+  .login-button, .reset-button {
+    width: 296px;
+    height: 40px;
+    margin: 16px auto;
+    background: linear-gradient(270deg, #F65050 0%, #FF6948 100%);
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .login-button a {
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 40px;
+    text-decoration: none;
+  }
+  
+  .register a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .back-to-login {
+    margin-top: 16px;
+  }
+  
+  .back-to-login a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .forgotpw {
+    width: 296px;
+    font-size: 14px;
+    color: #A9AAB8;
+    margin-top: 32px;
+  }
+  
+  .pw-visible-btn {
+    width: 30px;
+    height: 30px;
+    background-image: url('/img/password-hide.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 4px;
+    right: 0px;
+    cursor: pointer;
+  }
+  
+  .pw-visible-btn.hide-pw {
+    background-image: url('/img/password-show.svg');
+  }
+  
+  .confirm-modal-bg-mask {
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0, 0.7);
+    z-index: 1;
+  }
+  
+  .confirm-modal-bg-mask.show {
+    visibility: visible;
+  }
+  
+  .reset-pw-confirm {
+    position: relative;
+    margin: 20vh auto;
+    width: 280px;
+    padding: 10px;
+    background: #FAFAFA;
+    box-shadow: 0px 15px 12px rgba(0, 0, 0, 0.22), 0px 19px 38px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  
+  .confirm-close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+  
+  .reset-or-suport-title {
+    margin: 14px;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.87);
+  }
+  
+  .reset-or-suport-desc {
+    margin: 8px 14px 20px 14px;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .confirm-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .confirm-actions .action-btn {
+    align-self: center;
+    width: 90px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FF6948;
+    text-align: center;
+    text-decoration: unset;
+    margin-left: 8px;
+  }
+  
+  .forgot-pw-desc {
+    font-size: 16px;
+    line-height: 26px;
+    width: 296px;
+    margin: 24px auto 30px auto;
+    color: #ffffff;
+  }
+  
+  .title0 {
+    font-size: 20px;
+  }
+  
+  .sent-desc {
+    width: 296px;
+    margin-top: 24px;
+    margin-bottom: 40px;
+  }
